@@ -1,0 +1,38 @@
+﻿<Window x:Class="GitLottoApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GitLottoApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0">
+            <Label x:Name="lblHeader" Content="Lucky Lotto Number Generator" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="16"/>
+        </DockPanel>
+        <DockPanel Grid.Row="1">
+            <Label x:Name="lblChooseLotto" Content="Please Choose Lotto Type" Height="64" VerticalAlignment="Bottom"/>
+            <Button x:Name="btnIrish" Content="Irish" Width="100" HorizontalAlignment="Right" Click="btnIrish_Click"/>
+            <Button x:Name="btnEnglish" Content="English" Width="100" HorizontalAlignment="Right"/>
+        </DockPanel>
+        <DockPanel Grid.Row="2">
+            <StackPanel>
+                <StackPanel HorizontalAlignment="Center">
+                    
+                </StackPanel>
+                <StackPanel>
+                    
+                </StackPanel>
+            </StackPanel>
+            <Label x:Name="label" Content="Label" Height="128" VerticalAlignment="Top"/>
+            <Label x:Name="label1" Content="Label" Height="128" VerticalAlignment="Top"/>
+        </DockPanel>
+
+    </Grid>
+</Window>
